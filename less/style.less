@@ -1,0 +1,91 @@
+
+@font-face {
+    font-family: 'Do Hyeon', sans-serif;
+    src: url(fonts/DoHyeon-Regular.ttf);
+   }
+
+@black: #000;
+@while: #fff;
+
+body {
+    overflow: hidden;
+}
+
+#myVideo {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    position: fixed;
+    min-height: 100%;
+    background: #ccc;
+    opacity: 0.5;
+}
+
+li {
+    list-style-type: none;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.logo_conteiner {
+    margin: 20px 40px;
+        .logo {
+            width: 70px;
+            height: 70px;
+            color: @black;
+            padding-top: 9px;
+            background-color: @while;
+            border-top-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+    }
+
+.navigation_menu ul li a {
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+            &:hover {
+                color:#000;
+            }
+}
+
+.visible_menu {
+    display: none;
+}
+
+.navigation_phone_bars {
+    position: relative;
+    bottom: 55px;
+}
+
+.menu {
+    padding: 20px 40px 0px 40px ;
+}
+
+.dropdown-toggle {
+    color: rgb(184, 187, 34);
+    padding: 8px;
+    border-color: #000;
+    border-radius: 4px solid #000;
+}
+
+@media (max-width: 780px) {
+    .hidden_menu {
+        display: none;
+    }
+    .visible_menu {
+        display: block;
+    }
+}
+   
+.logo_phone_menu {
+    font-size: 17px;
+    width: 40px;
+    height: 40px;
+    color: @black;
+    padding-top: 10px;
+    background-color: @while;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
